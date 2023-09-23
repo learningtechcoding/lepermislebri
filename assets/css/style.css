@@ -552,12 +552,16 @@ border-radius: 10px;
       
     } 
 }
+
 /*##############> Third Section End<############*/
 
 
 /*###############> Forth Section Statr <#############  */
-
  
+ .Discoint{
+line-height: 30px;
+font-size: 18px;
+ }
 
 .bg{
     background-color: #f5f6f8;
@@ -579,7 +583,8 @@ border-radius: 10px;
 }
 .partout, .offre , .rapport
 {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 38px;
 }
 
 .hr-1
@@ -670,6 +675,208 @@ border-radius: 10px;
 
 
 
+/*#################> Fifth Section Start <############# */
+ 
+.assurance{
+    margin-left:2rem;
+    margin-right:2rem;
+    border: 1px solid;
+    padding:48px;
+    background: #f5f6f8;
+}
+.assurance-heading h2{
+    margin-bottom:30px;
+    font-size:45px;
+    font-weight:700px;
+}
+.assurance-list{
+    list-style: none;
+    padding: 0;
+}
+.assurance-list li{
+    padding:5px;
+}
+.assurance-list li .a-list-text{
+    font-size: 18px;
+}
+.check-icon i{
+    font-size:15px;
+    font-weight:0px;
+    padding: 8px;
+}
+.assurance-img{
+    border: none;
+    border-radius: 150px;
+    height:400px;
+}
+
+.assurance-button{
+    background-color: #e50054;
+    padding:10px;
+    
+}
+
+@media screen and (max-width:991px) {
+    .assurance{
+        margin-left:0;
+        margin-right:0;
+        border: 1px solid;
+        padding:20px;
+        background: #f5f6f8;
+    }
+    .assurance-list li{
+        padding:0px;
+        
+    }
+    .check-icon i{
+        padding: 8px;
+    }
+    .assurance-img{
+        border: none;
+        border-radius:50px;
+        height:300px;
+    }
+
+}
+
+
+
+
+
+ 
+.article-card{
+    /* border: 1px solid; */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 10px;
+    margin-top: 1rem;
+    height:450px;
+    position: relative;
+}
+.voirpluslink{
+    position: absolute;
+    bottom: 25px;
+}
+.article-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.article-card:hover {
+    transform: translatey(10px); 
+}
+.article-card img{
+    height:115px;
+   object-fit: cover;
+    border-radius:10px;
+    /* padding: 5px; */
+}
+.article-card h3{
+font-size: 18px;
+padding: 5px;
+}
+.article-card p{
+color: #818EA2;
+padding: 5px;
+font-size:18px;
+font-weight: 400px;
+}
+
+.article-card a{
+    border: 1px solid;
+    }
+    .article-card a:hover{
+        background-color: #818EA2;
+    }
+
+
+   .article-link a{
+    color:#b10945 ;
+    font-size: 18px;
+   }
+   .article-mid{
+    border-left: 1px solid #b10945;
+    border-right: 1px solid #b10945;
+    
+   }
+   .heading-with-line {
+    text-align: center;
+    position: relative;
+}
+   .heading-line {
+    width: 100px;
+    height: 2px; 
+    background-color:#b10945; 
+    position: absolute;
+    bottom: 0;
+    left:45%;
+    bottom:-10px;
+    
+}
+@media screen and (max-width:437px) {
+    .heading-line {
+        left:37%;
+        
+    }
+
+}
+
+
+@media(max-width:1100px){
+    .article-card{
+        height: 500px;
+    }
+}
+    
+@media(max-width:768px){
+    .article-card{
+        height: auto;
+    }
+}
+    
+
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed{
+    background-color: #F5F6F8;
+}
+/*#################> Fifth Section End <############# */
+
+
+/*#################> Sixth Section Start  <#############*/
+ 
+
+.permis a {
+    color: #b1094b;
+}
+
+.women-border img{
+    border-radius: 100px;
+}
+.button-background{
+    background-color: #E50054 !important;
+    border: 1px solid #E50054 !important;
+    color: white;
+}
+
+.reserve-btn
+{
+    border: 1px solid black;
+    border-radius: 21px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: white;
+
+}
+
+@media screen and (max-width: 768px){
+    .button-direction
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .uni-text, .auto-text{
+        text-align: center;
+    }
+}
+/*#################> Sixth Section End  <#############*/
 
 
 
@@ -792,11 +999,5 @@ footer{
   
    
 }
-
-
-
-
-
-
-
+ 
 /*###############> Footer Section End  <############# */
