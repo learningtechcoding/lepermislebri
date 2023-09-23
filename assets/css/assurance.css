@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+ 
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.assurance{
+    margin-left:2rem;
+    margin-right:2rem;
+    border: 1px solid;
+    padding:48px;
+    background: #f5f6f8;
+}
+.assurance-heading h2{
+    margin-bottom:30px;
+    font-size:45px;
+    font-weight:700px;
+}
+.assurance-list{
+    list-style: none;
+    padding: 0;
+}
+.assurance-list li{
+    padding:5px;
+}
+.assurance-list li .a-list-text{
+    font-size: 18px;
+}
+.check-icon i{
+    font-size:15px;
+    font-weight:0px;
+    padding: 8px;
+}
+.assurance-img{
+    border: none;
+    border-radius: 150px;
+    height:400px;
+}
+
+.assurance-button{
+    background-color: #e50054;
+    padding:10px;
+    
+}
+
+@media screen and (max-width:991px) {
+    .assurance{
+        margin-left:0;
+        margin-right:0;
+        border: 1px solid;
+        padding:20px;
+        background: #f5f6f8;
+    }
+    .assurance-list li{
+        padding:0px;
+        
+    }
+    .check-icon i{
+        padding: 8px;
+    }
+    .assurance-img{
+        border: none;
+        border-radius:50px;
+        height:300px;
+    }
+
+}

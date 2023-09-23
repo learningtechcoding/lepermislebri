@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+ 
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.article-card{
+    /* border: 1px solid; */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 10px;
+    margin-top: 1rem;
+    height:450px;
+    position: relative;
+}
+.voirpluslink{
+    position: absolute;
+    bottom: 25px;
+}
+.article-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.article-card:hover {
+    transform: translatey(10px); 
+}
+.article-card img{
+    height:115px;
+   object-fit: cover;
+    border-radius:10px;
+    /* padding: 5px; */
+}
+.article-card h3{
+font-size: 18px;
+padding: 5px;
+}
+.article-card p{
+color: #818EA2;
+padding: 5px;
+font-size:18px;
+font-weight: 400px;
+}
+
+.article-card a{
+    border: 1px solid;
+    }
+    .article-card a:hover{
+        background-color: #818EA2;
+    }
+
+
+   .article-link a{
+    color:#b10945 ;
+    font-size: 18px;
+   }
+   .article-mid{
+    border-left: 1px solid #b10945;
+    border-right: 1px solid #b10945;
+    
+   }
+   .heading-with-line {
+    text-align: center;
+    position: relative;
+}
+   .heading-line {
+    width: 100px;
+    height: 2px; 
+    background-color:#b10945; 
+    position: absolute;
+    bottom: 0;
+    left:45%;
+    bottom:-10px;
+    
+}
+@media screen and (max-width:437px) {
+    .heading-line {
+        left:37%;
+        
+    }
+
+}
+
+
+@media(max-width:1100px){
+    .article-card{
+        height: 500px;
+    }
+}
+    
+@media(max-width:768px){
+    .article-card{
+        height: auto;
+    }
+}
+    
