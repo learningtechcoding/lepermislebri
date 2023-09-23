@@ -1,0 +1,89 @@
+.main{
+background-color: #f5f6f8;
+border: 1px solid rgb(97, 95, 95);
+border-radius: 10px;
+}
+
+.heading h2{
+    textetaps-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    font-weight: 600;
+}
+
+.line::after{
+    height: 2px;
+    content: '';
+    width: 5%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e50054;
+    color: #e50054;
+    padding:0 15px;
+}
+.divtaps{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:#e50054;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    textetaps-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px !important;
+}
+.textetaps-heading{
+    display: flex;
+    padding-top: 30px;
+   
+}
+.textetaps-heading h3{
+  font-weight: 400;
+  font-family: poppins;
+  color: rgb(58, 58, 58);
+
+}
+.textetaps p a{
+    color:#e50054;
+    font-weight: 600;
+    font-size: 15px;
+}
+.textetaps p{
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+    font-family: poppins;
+}
+.btntaps{
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #e50054 !important;
+}
+
+ 
+@media (max-width:1350px) {
+    .line::after{
+        margin-top: 20px;
+
+    }
+
+}
+@media (max-width:770px) {
+    .textetaps-heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+ 
+}

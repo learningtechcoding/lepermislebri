@@ -1,6 +1,5 @@
- 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
- 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto:wght@300&family=Syne:wght@400;500;600;700;800&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
@@ -29,6 +28,7 @@
     height: 100vh;
     object-fit: cover;
     background-repeat: no-repeat;
+    position: relative;
    
 }
 
@@ -241,6 +241,21 @@ color: black;
 }
 
 
+
+@media(max-width:992px)
+{
+    .mainhomebanner{
+    background-image: url('../img/leperbannerimg.jpeg');
+    width: 100%;
+  
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+}
+
 @media(min-width:1400px)
 {
     .lognsieimage{
@@ -264,6 +279,14 @@ color: black;
 }
 
 
+.homebannerheadig h1{
+
+    font-size:30px  !important;
+    color: #f5f6f8;
+    font-weight: 700 !important;
+}
+
+
 .submiybuttonlogin{
    width: 100%;
 
@@ -280,3 +303,500 @@ color: black;
 }
 /* ##############>Login Style End<######### */
  
+
+
+/*################> Second Section Start <########### */
+/* @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+body {
+  font-family: poppins;
+} */
+.card-background {
+  background: #f5f6f8;
+  position: relative;
+}
+.code-card {
+  background: #ebedf0;
+  border-radius: 10px;
+  height: 250px;
+}
+.code-card h5 {
+  color: #e50054;
+  font-size: 40px;
+  font-weight: 400;
+}
+.code-card h6 {
+  color: #181b1e;
+  font-size: 24px;
+  font-weight: 600;
+}
+.code-card p {
+  color: #3f4245;
+  font-size: 16px;
+}
+
+.code-card-2 {
+  border: 1px solid #181b1e;
+  border-radius: 10px;
+  height: 300px;
+  position: relative;
+}
+.code-border2 {
+  border: 1px solid #e50054;
+  border-radius: 10px;
+}
+.code-card-2 h6 {
+  color: #434547;
+  font-size: 20px;
+}
+.code-card-2 ul li {
+  color: #595b5e;
+  font-size: 17px;
+  line-height: 25px;
+}
+.button-card {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.button-card a {
+  border: 1px solid #181b1e;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: 400;
+}
+.button-card a:hover {
+  border: 1px solid #181b1e;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: 400;
+}
+.button-card2 a {
+  background: #e50054;
+  border: 1px solid #e50054;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: 400;
+}
+.button-card2 a:hover {
+  background: #e50054;
+  border: 1px solid #e50054;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: 400;
+}
+.faq-background {
+  background: #f5f6f8;
+}
+.faq-main{
+    border-radius: 15px !important;
+}
+.faq-head button {
+  font-weight: 600;
+  font-size: 20px;
+  background: #fff !important;
+  color: #181B1E !important;
+}
+.faq-head button:focus {
+box-shadow: none;
+}
+.faq-text ul li {
+  font-size: 17px;
+  line-height: 30px;
+  color: #181B1E;
+}
+.faq-button{
+    background: #e50054 !important;
+    border: 1px solid #e50054 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    border-radius: 30px !important;
+    font-weight: 500 !important;
+    width: 150px;
+}
+.bg-blank{
+    background: #fff;
+    height: 100px;
+}
+.profile-bg{
+    background: #f5f6f8;   
+}
+.profile-code{
+    border: 1px solid #181b1e;
+    border-radius: 10px;
+    height: 270px;
+}
+.profile-code p{
+  color: #575A5C;
+  font-weight: 500;
+}
+
+.head-img img{
+   width: 100%;
+}
+.P{
+    color: #181B1E;
+}
+.profile-link{
+    color: #707F95;
+    font-size: 18px;
+    font-weight: 600;
+}
+.profile-link i{
+    font-size: 16px;
+}
+.profile-verfile{
+    color: #8B97A9;
+}
+.singlrlindunder{
+    width: 100%;
+    height: 4px;
+    background-color: #ced3db;
+}
+@media (max-width: 768px) {
+  .code-card {
+    height: auto;
+  }
+}
+
+/*################> Second Section End<########### */
+
+/*##############> Third Section Start<############  */
+
+.maintetaps{
+background-color: #f5f6f8;
+border: 1px solid rgb(97, 95, 95);
+border-radius: 10px;
+}
+.heading{
+    position: relative;
+}
+
+.heading h2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+} 
+.line::after{
+    height: 2px;
+    content: '';
+    width: 5%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e50054;
+    color: #e50054;
+    padding:0 15px;
+}
+.divtaps{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:#e50054;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px !important;
+}
+.textetaps-heading{
+    display: flex;
+    padding-top: 30px; 
+}
+.textetaps-heading h3{
+  font-weight: 400;
+  font-family: poppins;
+  color: rgb(58, 58, 58);
+
+}
+.textetaps p a{
+    color:#e50054;
+    font-weight: 600;
+    font-size: 15px;
+}
+.textetaps p{
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+    font-family: poppins;
+}
+.btntaps{
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #e50054 !important;
+} 
+@media (max-width:1350px) {
+    .line::after{
+        margin-top: 20px;
+
+    } 
+}
+@media (max-width:770px) {
+    .textetaps-heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    } 
+}
+/*##############> Third Section End<############*/
+
+
+/*###############> Forth Section Statr <#############  */
+
+ 
+
+.bg{
+    background-color: #f5f6f8;
+    border-radius: 10px;
+}
+
+.calender-img img{
+    width: 70%;
+}
+
+.reserve-btn
+{
+    border: 1px solid black;
+    border-radius: 21px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: white;
+
+}
+.partout, .offre , .rapport
+{
+    font-weight: 600;
+}
+
+.hr-1
+{
+    position: absolute;
+    border: px solid red;
+    width: 30px;
+    background: red;
+    height: 5px;
+}
+ .hr-1::after{
+    content: "";
+    width:45%;
+    height: 1px;
+    /* background-color: rgba(194, 194, 194, 1); */
+    position: absolute;
+    /* top: 50%; */
+    /* bottom: 0px; */
+    /* left: 0px; */
+} 
+.leaflet-control-search .search-input {
+    border: none !important;
+    outline: none   !important;
+}
+.permis a {
+    color: #b1094b;
+}
+.top-margin{
+    margin-top: -10px;
+}
+.button-background{
+    background-color: #E50054;
+    border: 1px solid #E50054;
+    color: white;
+}
+.image-border img{
+    border-radius: 100px;
+}
+.marginn-tops{
+    margin-top: 100px;
+}
+.card-border{
+    border: 1px solid #CED3DB;
+    border-radius: 10px 0px 0px 10px;
+}
+.card-top{
+    margin-top: 60px;
+}
+.card3-border{
+    border: 1px solid #CED3DB;
+    border-radius: 0px 10px 10px 0px;
+}
+.card2-border{
+    border: 1px solid #f5f6f8;
+    background-color: #f5f6f8;
+    border-radius: 10px;
+}
+.leper-margin{
+    margin-top: 40px;
+}
+/*Responsive */
+@media screen and (max-width: 768px) {
+    .calender-img
+    {
+        display: none;
+    }
+    .button
+    {
+        text-align: center !important;
+    }
+    .direction
+    {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .card-top{
+        margin-top: 10px;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+/*###############> Forth Section end<#############  */
+
+
+
+
+
+
+/*###############> Footer Section Start <############ */
+/*--footer start--*/
+
+footer{
+    background-color: #181b1e;
+}
+.footerheading{
+    color: #fff;
+    margin-top: 50px;
+    font-family: poppins;
+}
+.bttn{
+    margin-top: 50px;
+    background-color: #e50054;
+    color: white;
+    border: none;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+.footer-text{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: poppins;
+}
+.main-footer ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+.main-footer ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 15px;
+    font-family: poppins;
+   
+}
+.main-footer ul li a:hover{
+    border-bottom: 1px solid  rgb(255, 255, 255);;
+}
+
+.footer-image{
+    filter: brightness(0) invert(1);
+    width: 220px;
+    }
+.star-image img{
+    margin-top: 30px;
+ }
+ .star-image{
+    display: flex;
+    width: 40px;
+    height: 50px;
+    gap: 10px;
+   
+ }
+ .main-footer span{
+    margin-top: 30px;
+    color: white;
+    font-family: poppins;
+ }
+ .main-footer span a{
+    color: white;
+    text-decoration: none;
+    font-family: poppins;
+    
+    }
+.main-footer hr{
+    color: #fff;
+}
+.font-icon{
+    color: #fff;
+   padding: 10px;
+   font-size: 25px;
+   cursor: pointer;
+}
+.footer-p{
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    font-family: poppins;
+}
+/*--footer end---*/
+
+/*--@media query start---*/
+@media (max-width:1350px) {
+    .line::after{
+        margin-top: 70px;
+
+    }
+
+}
+@media (max-width:770px) {
+    .text-heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+ 
+}
+@media (max-width:375px) {
+    .footer-image{
+        width: 200px;
+    }
+  
+    .bttn{
+        width: 100%;
+    }
+    .text-heading h3{
+        text-align: center;
+    }
+  
+   
+}
+
+
+
+
+
+
+
+/*###############> Footer Section End  <############# */

@@ -1,330 +1,1023 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lepermislebri</title>
-    <link rel="stylesheet" href="./assets/css/home.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- #####################font awesome################ -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+        <!-- Map Link -->
 
-<body>
-    <!-- #################1st card################ -->
-    <div class="card-background">
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet-search@2.9.6/dist/leaflet-search.min.css" />
+        <!-- Map Link -->
+        <!-- #####################font awesome################ -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+
+        <div class="mainprofilt px-2 px-md-5">
+            <div
+                class=" p-md-3 text-center text-md-start d-md-flex justify-content-between">
+
+                <p class=" my-0 mainprofiltcontent">Pour 2€ seulement, obtenez
+                    votre code de la route en moins de deux avec le code promo
+                    CODE2.</p>
+                <a href class="mainprofiltcontentlink">
+                    J’en profite <i class="fas fa-arrow-right px-2 profitarrow"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mainhomebanner">
+
+            <div class="px-2 px-md-5 pt-2">
+                <nav
+                    class="navbar navbar-expand-lg navbar-light bg-light rounded-2 border-1 pb-3  bg-white">
+                    <div class="container-fluid position-relative">
+                        <a class="navbar-brand logoimage" href="#">
+                            <img src="./assets/img/logo.png" alt>
+                        </a>
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse mt-2 mainnavbarset"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown px-2">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Permis
+                                    </a>
+                                    <ul class="dropdown-menu  "
+                                        aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another
+                                                action</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Something
+                                                else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link "
+                                        aria-current="page" href="#">Code</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link" href="#">Assurance auto</a>
+                                </li>
+                                <li class="nav-item px-2">
+                                    <a class="nav-link" href="#">Tarifs</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Aida
+                                    </a>
+                                    <ul class="dropdown-menu  "
+                                        aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another
+                                                action</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Something
+                                                else here</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                            <button
+                                class="btn incriptionbtnfirst    mx-2 rounded-5"
+                                type="submit">Connexion</button>
+                            <button class="btn incriptionbtn   rounded-5"
+                                type="submit">Search</button>
+
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="row p-0 m-0 mt-5 pt-5  px-2 px-md-5 mainhom ebanner">
+                <div
+                    class="col-md-6  pb-5 pb-md-0 align-self-center homebannerheadig">
+                    <h1>Réservez vos leçons en ligne, passez le permis
+                        <p class="text-black">en vrai</p>
+                    </h1>
+                    <div class="row">
+                        <div class="col-md-10">
+
+                            <button class="px-4 py-3 homebannerbtn1">Je passe le
+                                permis pour 799€ <i
+                                    class="fas fa-arrow-right px-2 profitarrow"></i></button>
+                        </div>
+                        <div class="col-md-10 mt-4">
+
+                            <button class="px-4   homebannerbtn2">Nous contacter
+                                - 04 26 22 91 77</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 align-self-center d-none d-md-block">
+                    <img src="./assets/img/slider2image.jpg"
+                        class="d-block w-100 rounded-3" alt="...">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ################>Second Section Start <########### -->
+        <!-- #################1st card################ -->
+        <div class="card-background pt-3 ">
+            <div class="container-fluid p-2 p-md-4">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <div class="card  border-0">
+                            <div class="card-body code-card">
+                                <h5 class="card-title text-center"><i
+                                        class="fa-solid fa-euro-sign"></i></h5>
+                                <h6 class="card-subtitle mb-2 text-center">Le
+                                    code à 19€ seulement</h6>
+                                <p class="card-text text-center">Pas de frais de
+                                    dossiers ni de coûts cachés pour réviser...
+                                    et 250€
+                                    d’économies <i
+                                        class="fa-solid fa-circle-info"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-md-0 mt-3  ">
+                        <div class="card   border-0">
+                            <div class="card-body code-card">
+                                <h5 class="card-title text-center"><i
+                                        class="fa-regular fa-id-card"></i></h5>
+                                <h6 class="card-subtitle mb-2 text-center">445
+                                    000 élèves nous font confiance</h6>
+                                <p class="card-text text-center">C’est plus de 5
+                                    Stade de France... Autant vous dire qu’on a
+                                    de l’expérience ! </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-md-0 mt-3  ">
+                        <div class="card  border-0">
+                            <div class="card-body code-card">
+                                <h5 class="card-title text-center"><i
+                                        class="fa-regular fa-star"></i></h5>
+                                <h6 class="card-subtitle mb-2 text-center">93%
+                                    de candidats satisfaits</h6>
+                                <p class="card-text text-center">Maximisez vos
+                                    chances de réussite avec nos coaches et
+                                    fiches de révisions personnalisées.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--################ 2nd cards ###############-->
         <div class="container-fluid p-2 p-md-4">
-            <div class="row">
-                <div class="col-md-4 ">
-                    <div class="card  border-0">
-                        <div class="card-body code-card">
-                            <h5 class="card-title text-center"><i class="fa-solid fa-euro-sign"></i></h5>
-                            <h6 class="card-subtitle mb-2 text-center">Le code à 19€ seulement</h6>
-                            <p class="card-text text-center">Pas de frais de dossiers ni de coûts cachés pour réviser...
-                                et 250€
-                                d’économies <i class="fa-solid fa-circle-info"></i></p>
+            <h1 class="text-center">Prêt à passer le code moins cher ?</h1>
+            <div class="row pt-5">
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <div class="card border-0">
+                        <div class="card-body code-card-2">
+                            <h6 class="card-subtitle mb-2 ">Code de la route</h6>
+                            <ul class="list-unstyled pt-2">
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check"></i>&nbsp;<p
+                                        class="card-text">1 an d’accès à la
+                                        formation
+                                        code</p>
+                                </li>
+                            </ul>
+
+                            <div
+                                class="d-flex justify-content-between button-card p-button1">
+                                <h4>
+                                    <span>19</span>
+                                    <sup><i class="fa-solid fa-euro-sign"></i></sup>
+                                </h4>
+                                <a href="#" class="btn"><i
+                                        class="fa-solid fa-check"></i>&nbsp;Sélectionner</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mt-md-0 mt-3  ">
-                    <div class="card   border-0">
-                        <div class="card-body code-card">
-                            <h5 class="card-title text-center"><i class="fa-regular fa-id-card"></i></h5>
-                            <h6 class="card-subtitle mb-2 text-center">445 000 élèves nous font confiance</h6>
-                            <p class="card-text text-center">C’est plus de 5 Stade de France... Autant vous dire qu’on a
-                                de l’expérience ! </p>
+                    <div class="card border-0">
+                        <div class="card-body code-card-2">
+                            <h6 class="card-subtitle mb-2 text-center">Code +
+                                examen</h6>
+                            <ul class="list-unstyled pt-2">
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check"></i>&nbsp;<p
+                                        class="card-text">1 an d’accès à la
+                                        formation
+                                        code </p>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check"></i>&nbsp;<p
+                                        class="card-text">Coaching personnalisé
+                                        avec
+                                        nos experts</p>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check"></i>&nbsp;<p
+                                        class="card-text">Une place à l'examen
+                                        du code
+                                        de la route avec La Poste</p>
+                                </li>
+                            </ul>
+                            <div
+                                class="d-flex justify-content-between button-card p-button2">
+                                <h4>
+                                    <span>44</span>
+                                    <sup><i class="fa-solid fa-euro-sign"></i></sup>
+                                </h4>
+                                <a href="#" class="btn"><i
+                                        class="fa-solid fa-check"></i>&nbsp;Sélectionner</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mt-md-0 mt-3  ">
-                    <div class="card  border-0">
-                        <div class="card-body code-card">
-                            <h5 class="card-title text-center"><i class="fa-regular fa-star"></i></h5>
-                            <h6 class="card-subtitle mb-2 text-center">93% de candidats satisfaits</h6>
-                            <p class="card-text text-center">Maximisez vos chances de réussite avec nos coaches et
-                                fiches de révisions personnalisées.</p>
+                    <div class="card border-0">
+                        <div class="card-body code-card-2 code-border2">
+
+                            <h6 class="card-subtitle mb-2 ">Code + examen + 1re
+                                heure de conduite</h6>
+                            <ul class="list-unstyled pt-2">
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check"></i>&nbsp;<p
+                                        class="card-text">Une place à l'examen
+                                        du
+                                        code de la route avec La Poste</p>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check"></i>&nbsp;<p
+                                        class="card-text">1 an d’accès à la
+                                        formation code</p>
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check"></i>&nbsp;<p
+                                        class="card-text">Créneaux 7j/7 de 6h à
+                                        23h</p>
+
+                                </li>
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-check"></i>&nbsp;<p
+                                        class="card-text">Réservation avec
+                                        l’enseignant de votre choix pendant 1 an</p>
+
+                                </li>
+
+                            </ul>
+                            <div
+                                class="d-flex justify-content-between button-card button-card2 pt-2">
+                                <h4>
+                                    <span>64</span>
+                                    <sup><i class="fa-solid fa-euro-sign"></i>90</sup>
+                                </h4>
+                                <a href="#" class="btn"><i
+                                        class="fa-solid fa-check"></i>&nbsp;Sélectionner</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-    </div>
-    <!--################ 2nd cards ###############-->
-    <div class="container-fluid p-2 p-md-4">
-        <h1 class="text-center">Prêt à passer le code moins cher ?</h1>
-        <div class="row pt-5">
-            <div class="col-md-4 mt-md-0 mt-3">
-                <div class="card border-0">
-                    <div class="card-body code-card-2">
-                        <h6 class="card-subtitle mb-2 ">Code de la route</h6>
-                        <ul class="list-unstyled pt-2">
-                            <li class="d-flex">
-                                <i class="fa-solid fa-check"></i>&nbsp;<p class="card-text">1 an d’accès à la formation
-                                    code</p>
-                            </li>
-                        </ul>
 
-                        <div class="d-flex justify-content-between button-card p-button1">
-                            <h4>
-                                <span>19</span>
-                                <sup><i class="fa-solid fa-euro-sign"></i></sup>
-                            </h4>
-                            <a href="#" class="btn"><i class="fa-solid fa-check"></i>&nbsp;Sélectionner</a>
+        <!--############################## faq############################## -->
+        <div class="faq-background mt-5">
+            <h1 class="pt-4 text-center">Une plateforme dédiée pour votre
+                réussite</h1>
+            <div class="container-fluid p-2 p-md-4">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="accordion accordion-flush"
+                            id="accordionFlushExample">
+                            <div class="accordion-item faq-main border-0">
+                                <h2 class="accordion-header faq-head">
+                                    <button class="accordion-button collapsed"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Cours et tests de code en ligne
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body faq-text">
+                                        <ul>
+                                            <li>Réviser le code de la route
+                                                devient simple avec nos cours
+                                                vidéos</li>
+                                            <li>Entraînements en ligne sur les
+                                                10 thèmes conformes à l'examen
+                                                théorique 2023
+                                            </li>
+                                            <li>Suivez votre progression et
+                                                comparez votre niveau au code de
+                                                la route avec
+                                                les autres candidats
+                                                lePERMISLIBRE</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item faq-main mt-4 border-0">
+                                <h2 class="accordion-header faq-head">
+                                    <button class="accordion-button collapsed"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Des révisions ludiques en vidéos
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body faq-text">
+                                        <ul>
+                                            <li>Visionnez chaque semaine nos
+                                                nouvelles vidéos en ligne</li>
+                                            <li>Un chat avec une enseignante
+                                                d’auto-école diplômée et
+                                                expérimentée</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item faq-main mt-4 border-0">
+                                <h2 class="accordion-header faq-head">
+                                    <button class="accordion-button collapsed"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Examens blancs
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body faq-text">
+                                        <ul>
+                                            <li>Testez-vous en condition réelle
+                                                avec des examens blancs pour
+                                                préparer votre
+                                                réussite à l'examen théorique</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div>
+                            <a href="#" class="btn mt-5 faq-button py-2">je
+                                passe le code</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mt-md-0 mt-3">
+                        <img src="./assets/img/side-img.PNG" alt class="w-100">
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4 mt-md-0 mt-3  ">
-                <div class="card border-0">
-                    <div class="card-body code-card-2">
-                        <h6 class="card-subtitle mb-2 text-center">Code + examen</h6>
-                        <ul class="list-unstyled pt-2">
-                            <li class="d-flex">
-                                <i class="fa-solid fa-check"></i>&nbsp;<p class="card-text">1 an d’accès à la formation
-                                    code </p>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fa-solid fa-check"></i>&nbsp;<p class="card-text">Coaching personnalisé avec
-                                    nos experts</p>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fa-solid fa-check"></i>&nbsp;<p class="card-text">Une place à l'examen du code
-                                    de la route avec La Poste</p>
-                            </li>
-                        </ul>
-                        <div class="d-flex justify-content-between button-card p-button2">
-                            <h4>
-                                <span>44</span>
-                                <sup><i class="fa-solid fa-euro-sign"></i></sup>
-                            </h4>
-                            <a href="#" class="btn"><i class="fa-solid fa-check"></i>&nbsp;Sélectionner</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mt-md-0 mt-3  ">
-                <div class="card border-0">
-                    <div class="card-body code-card-2 code-border2">
-
-                        <h6 class="card-subtitle mb-2 ">Code + examen + 1re heure de conduite</h6>
-                        <ul class="list-unstyled pt-2">
-                            <li class="d-flex">
-                                <i class="fa-solid fa-check"></i>&nbsp;<p class="card-text">Une place à l'examen du
-                                    code de la route avec La Poste</p>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fa-solid fa-check"></i>&nbsp;<p class="card-text">1 an d’accès à la
-                                    formation code</p>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fa-solid fa-check"></i>&nbsp;<p class="card-text">Créneaux 7j/7 de 6h à
-                                    23h</p>
-
-                            </li>
-                            <li class="d-flex">
-                                <i class="fa-solid fa-check"></i>&nbsp;<p class="card-text">Réservation avec
-                                    l’enseignant de votre choix pendant 1 an</p>
-
-                            </li>
-
-                        </ul>
-                        <div class="d-flex justify-content-between button-card button-card2 pt-2">
-                            <h4>
-                                <span>64</span>
-                                <sup><i class="fa-solid fa-euro-sign"></i>90</sup>
-                            </h4>
-                            <a href="#" class="btn"><i class="fa-solid fa-check"></i>&nbsp;Sélectionner</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
+        <!-- blank -->
+        <div class=" bg-blank">
+        </div>
 
-    <!--############################## faq############################## -->
-    <div class="faq-background mt-5">
-        <h1 class="pt-4 text-center">Une plateforme dédiée pour votre réussite</h1>
-        <div class="container-fluid p-2 p-md-4">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item faq-main border-0">
-                            <h2 class="accordion-header faq-head">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    Cours et tests de code en ligne
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body faq-text">
-                                    <ul>
-                                        <li>Réviser le code de la route devient simple avec nos cours vidéos</li>
-                                        <li>Entraînements en ligne sur les 10 thèmes conformes à l'examen théorique 2023
-                                        </li>
-                                        <li>Suivez votre progression et comparez votre niveau au code de la route avec
-                                            les autres candidats lePERMISLIBRE</li>
-                                    </ul>
-                                </div>
+        <!-- ###########card3 ############-->
+        <div class="profile-bg">
+            <h1 class="text-center pt-4">Ils ont obtenu leur code et leur permis
+                grâce à nous</h1>
+            <div class="container-fluid p-2 p-md-4">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card  border-0 ">
+                            <div class="card-body profile-code">
+                                <h5 class="card-title head-img">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <p class="P">Stef</p>
+                                        </div>
+                                        <div class="col-4 justify-content-end">
+                                            <div><img
+                                                    src="./assets/img/star.png"
+                                                    alt></div>
+                                        </div>
+                                        <div
+                                            class="col-4 d-flex profile-verfile">
+                                            <i
+                                                class="fa-regular fa-circle-check mt-1"></i>&nbsp
+                                            <p>Vérifié</p>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <p class="card-text">“Très bonne application !!!
+                                    mon code en 1 mois avec 38
+                                    bonnes réponses je suis trop content !!!
+                                    bonne chance à vous tous !!!”</p>
+                                <a href="#" class="card-link profile-link">Voir
+                                    sur Trustpilot &nbsp;<i
+                                        class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
-                        <div class="accordion-item faq-main mt-4 border-0">
-                            <h2 class="accordion-header faq-head">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    Des révisions ludiques en vidéos
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body faq-text">
-                                    <ul>
-                                        <li>Visionnez chaque semaine nos nouvelles vidéos en ligne</li>
-                                        <li>Un chat avec une enseignante d’auto-école diplômée et expérimentée</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-3  ">
+                        <div class="card   border-0">
+                            <div class="card-body profile-code">
+                                <h5 class="card-title head-img">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <p class="P">Winnei E.</p>
+                                        </div>
+                                        <div class="col-4 justify-content-end">
+                                            <div><img
+                                                    src="./assets/img/star.png"
+                                                    alt></div>
+                                        </div>
+                                        <div
+                                            class="col-4 d-flex profile-verfile">
+                                            <i
+                                                class="fa-regular fa-circle-check mt-1"></i>&nbsp
+                                            <p>Vérifié</p>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <p class="card-text">“Expérience formidable et
+                                    accompagnement assuré du code à
+                                    l’examen pratique et même après. Je ne
+                                    regrette pas de leur avoir accordé ma
+                                    confiance
+                                    et le recommande...”</p>
+                                <a href="#" class="card-link profile-link">Voir
+                                    sur Trustpilot &nbsp;<i
+                                        class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
-                        <div class="accordion-item faq-main mt-4 border-0">
-                            <h2 class="accordion-header faq-head">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
-                                    Examens blancs
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body faq-text">
-                                    <ul>
-                                        <li>Testez-vous en condition réelle avec des examens blancs pour préparer votre
-                                            réussite à l'examen théorique</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-3  ">
+                        <div class="card  border-0">
+                            <div class="card-body profile-code">
+                                <h5 class="card-title  head-img">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <p class="P">Ange S.</p>
+                                        </div>
+                                        <div class="col-4 justify-content-end">
+                                            <div><img
+                                                    src="./assets/img/star.png"
+                                                    alt></div>
+                                        </div>
+                                        <div
+                                            class="col-4 d-flex profile-verfile">
+                                            <i
+                                                class="fa-regular fa-circle-check mt-1"></i>&nbsp
+                                            <p>Vérifié</p>
+                                        </div>
+                                    </div>
+                                </h5>
+                                <p class="card-text ">“J'y croyais plus et je me
+                                    suis inscrite sur le
+                                    permislibre.fr, j'ai obtenu un coaching et
+                                    avec les encouragements, les conseils et une
+                                    méthode de travaille, j'y suis...”</p>
+                                <a href="#" class="card-link profile-link">Voir
+                                    sur Trustpilot &nbsp;<i
+                                        class="fa-solid fa-arrow-right"></i></a>
                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row p-0 m-0">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+
+                    <div class="singlrlindunder my-3"></div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+
+        <!-- ################>Second Section End<########### -->
+
+        
+        <!--#################> Third Section Start <########### -->
+
+    <div class="container pt-5 pb-5">
+      <div class="maintetaps p-md-5">
+        <div class="heading p-4">
+          <h2>Passez le permis de conduire en 5 étapes</h2>
+          <div class="line"></div>
+        </div>
+        <div class="maintetapstetaps-contant">
+          <div class="textetaps-heading">
+            <div class="divtaps p-4">1</div>
+            <div class="textetaps p-3">
+              <h3 class="pb-2">Inscrivez-vous</h3>
+
+              <p>
+                <a href="">Créez gratuitement un compte</a> pour débuter votre
+                formation au permis B et gérez votre apprentissage à votre
+                rythme, depuis votre mobile, ordinateur ou tablette :
+                entraînement au code, réservation de leçons de conduite,
+                inscription aux examens... En effet, pour réviser le code de la
+                route en ligne, notre offre est complète et conforme à l’examen
+                2023. Notre Service pédagogique répond à toutes vos questions
+                pour vous aider à progresser. Réservez votre place d’examen au
+                code en ligne depuis votre espace lePERMISLIBRE. Délai de
+                réservation : 24 heures. Coût : 30 euros. <br />
+                <a href="">
+                  Plus d’infos sur l’inscription au permis en ligne.</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="maintetaps-contant">
+          <div class="textetaps-heading">
+            <div class="divtaps p-4">2</div>
+            <div class="textetaps p-3">
+              <h3 class="pb-2">
+                Achetez les heures de conduite qu’il vous faut
+              </h3>
+
+              <p>
+                Sur votre espace personnel lePERMISLIBRE réservez directement
+                vos leçons de conduite avec un moniteur proche de chez vous
+                (boîte manuelle ou <a href="">permis boîte automatique</a> c’est
+                vous qui choisissez). La première heure de conduite est une
+                heure d’évaluation pour mesurer vos connaissances et vos
+                besoins. Pour passer le permis en candidat libre il n’y a pas de
+                minimum d’heures obligatoires. Vous effectuez vos leçons à la
+                carte, selon vos besoins. Sachez que vous pouvez effectuer des
+                <a href=""> heures de conduite</a> en même temps que vous
+                révisez le code ! Vous pouvez aussi simplement opter pour des
+                leçons de perfectionnement si vous avez déjà le permis de
+                conduire.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="maintetaps-contant">
+          <div class="textetaps-heading">
+            <div class="divtaps p-4">3</div>
+            <div class="textetaps p-3">
+              <h3 class="pb-2">
+                Réservez des heures avec les meilleurs enseignants de la
+                conduite
+              </h3>
+
+              <p>
+                Choisissez vos <a href=""> moniteurs</a> parmi nos partenaires
+                diplômés présents dans de nombreuses villes. Réservez vos cours
+                de conduite sur leur planning, du lundi au dimanche de 06h à
+                23h. Vous gérez ainsi votre formation au permis de conduire en
+                ligne, de manière autonome
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="maintetaps-contant">
+          <div class="textetaps-heading">
+            <div class="divtaps p-4">4</div>
+            <div class="textetaps p-3">
+              <h3 class="pb-2">Progressez sereinement</h3>
+
+              <p>
+                Suivez votre progression depuis votre espace candidat
+                lePERMISLIBRE, à la fin de chaque heure de conduite votre
+                enseignant remplit votre livret d’apprentissage.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="maintetaps-contant ">
+          <div class="textetaps-heading">
+            <div class="divtaps p-4">5</div>
+            <div class="textetaps p-3">
+              <h3 class="pb-2">
+                Vous êtes prêt ? Passez le permis de conduire
+              </h3>
+
+              <p>
+                Obtenez votre place d’examen du permis de conduire avec
+                RdvPermis. Votre enseignant vous accompagne à l’examen avec sa
+                voiture auto-école utilisée lors de votre formation. Consultez
+                vos résultats du permis sur
+                <a href="">le site de la sécurité routière,</a> sous 48 à 72
+                heures. On croise les doigts !
+              </p>
+
+              <button class="btn btn-danger btntaps">Je Passe le permis</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!--#################> Third Section End<########### -->
+
+
+
+
+        <!--######################> Forth Section Start<###################  -->
+
+        <!-- Vous préférez réserver des heures de conduite à la carte  -->
+
+        <div class="container px-5 py-5 mt-5">
+            <div class="ms-md-4 row">
+                <div class="d-flex bg pb-3">
+                    <div class>
+                        <div class="calender-img">
+                            <img src="./assets/img/calendar.png"
+                                class="img-fluid" alt>
                         </div>
                     </div>
                     <div>
-                        <a href="#" class="btn mt-5 faq-button py-2">je passe le code</a>
+                        <h3 class="fw-medium mt-4 reserver-text">Vous préférez
+                            réserver des heures de conduite à la carte ?</h3>
+                        <div class="button">
+                            <a href="./map.html"><button
+                                    class="reserve-btn ps-3 pe-3 mt-4">Je
+                                    reserve des heures</button></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-5 mt-md-0 mt-3">
-                    <img src="./assets/img/side-img.PNG" alt="" class="w-100">
                 </div>
             </div>
         </div>
-    </div>
-    <!-- blank -->
-    <div class=" bg-blank">
-    </div>
 
+        <!-- Des enseignants partout en France -->
 
-    <!-- ###########card3 ############-->
-    <div class="profile-bg">
-        <h1 class="text-center pt-4">Ils ont obtenu leur code et leur permis grâce à nous</h1>
-        <div class="container-fluid p-2 p-md-4">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card  border-0 ">
-                        <div class="card-body profile-code">
-                            <h5 class="card-title head-img">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <p class="P">Stef</p>
-                                    </div>
-                                    <div class="col-4 justify-content-end">
-                                        <div><img src="./assets/img/star.png" alt=""></div>
-                                    </div>
-                                        <div class="col-4 d-flex profile-verfile">
-                                            <i class="fa-regular fa-circle-check mt-1"></i>&nbsp
-                                            <p>Vérifié</p>
-                                        </div>     
-                                </div>
-                            </h5>
-                            <p class="card-text">“Très bonne application !!! mon code en 1 mois avec 38
-                                bonnes réponses je suis trop content !!! bonne chance à vous tous !!!”</p>
-                            <a href="#" class="card-link profile-link">Voir sur Trustpilot &nbsp;<i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
+                <div class="text-center mt-5 position-relative">
+                    <h2 class="partout">Des enseignants partout en France</h2>
+                    <!-- <div class="">
+                    <hr class="hr-1">
+                </div> -->
                 </div>
+            </div>
 
-                <div class="col-lg-4 col-md-6 mt-md-0 mt-3  ">
-                    <div class="card   border-0">
-                        <div class="card-body profile-code">
-                            <h5 class="card-title head-img">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <p class="P">Winnei E.</p>
-                                    </div>
-                                    <div class="col-4 justify-content-end">
-                                        <div><img src="./assets/img/star.png" alt=""></div>
-                                    </div>
-                                        <div class="col-4 d-flex profile-verfile">
-                                            <i class="fa-regular fa-circle-check mt-1"></i>&nbsp
-                                            <p>Vérifié</p>
-                                        </div>     
-                                </div>
-                            </h5>
-                            <p class="card-text">“Expérience formidable et accompagnement assuré du code à
-                                l’examen pratique et même après. Je ne regrette pas de leur avoir accordé ma confiance
-                                et le recommande...”</p>
-                            <a href="#" class="card-link profile-link">Voir sur Trustpilot &nbsp;<i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+        </div>
 
-                <div class="col-lg-4 col-md-6 mt-lg-0 mt-3  ">
-                    <div class="card  border-0">
-                        <div class="card-body profile-code">
-                            <h5 class="card-title  head-img">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <p class="P">Ange S.</p>
-                                    </div>
-                                    <div class="col-4 justify-content-end">
-                                        <div><img src="./assets/img/star.png" alt=""></div>
-                                    </div>
-                                        <div class="col-4 d-flex profile-verfile">
-                                            <i class="fa-regular fa-circle-check mt-1"></i>&nbsp
-                                            <p>Vérifié</p>
-                                        </div>     
-                                </div>
-                            </h5>
-                            <p class="card-text ">“J'y croyais plus et je me suis inscrite sur le
-                                permislibre.fr, j'ai obtenu un coaching et avec les encouragements, les conseils et une
-                                méthode de travaille, j'y suis...”</p>
-                            <a href="#" class="card-link profile-link">Voir sur Trustpilot &nbsp;<i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+        <!--Map start  -->
 
+        <div class="container mt-4">
+            <div id="map" style="height: 500px;"></div>
+        </div>
+
+        <!--Map End  -->
+
+        <!-- button -->
+        <div class="container text-center">
+            <div class="button">
+                <a href="./map.html"><button class="reserve-btn ps-3 pe-3 mt-4">Voir
+                        toutes les villes en France</button></a>
             </div>
         </div>
-    </div>
+        <!-- button -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        <!-- image section start -->
+        <div class="container">
+            <div class="row mt-md-5">
+                <div class="col-md-8 ">
+                    <h2 class="offre mt-5">Découvrez l'offre Permis accéléré à
+                        999 €</h2>
+                    <p class="mt-4">Une formation complète et simplifiée qui ne
+                        perd pas en qualité, le tout en 2 mois seulement, que
+                        demander de plus ? Ah si, la possibilité de choisir
+                        l’heure et le lieu de rendez-vous avec votre enseignant.
+                    </p>
+                    <p class="top-margin"> Choisissez lePERMISLIBRE pour votre
+                        formation au <span class="permis fw-bold"> <a
+                                href="./map.html">permis accéléré,</a></span> on
+                        s’occupe du reste !</p>
+
+                    <div class="d-flex direction">
+                        <div class="button me-md-4">
+                            <a href="./map.html"><button
+                                    class="reserve-btn ps-3 pe-3 mt-4">Voir
+                                    toutes les villes en France</button></a>
+                        </div>
+
+                        <div class="button ">
+                            <a href="./map.html"><button
+                                    class="reserve-btn ps-3 pe-3 mt-4 button-background">Voir
+                                    toutes les villes en France</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 image-border">
+                    <img src="./assets/img/accelerated-driving.png"
+                        class="img-fluid" alt>
+                </div>
+            </div>
+        </div>
+
+        <!-- image section End -->
+
+        <div class="container-fluid text-center marginn-tops">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h3 class="rapport">-35% par rapport à une auto-école
+                        traditionnelle</h3>
+
+                    <p>Passez le permis de conduire au meilleur prix, à votre
+                        rythme et avec le moniteur de la conduite de votre choix
+                        tout en étant accompagné par notre auto-école (plus
+                        d’informations <span class="permis fw-bold"> <a
+                                href="./map.html"> ici pour passer son permis
+                                moins cher avec lePERMISLIBRE</a></span>). Notre
+                        formation complète au permis comprenant le code en ligne
+                        et 20h de cours de conduite avec un moniteur
+                        professionnel et expérimenté vous coûtera en moyenne 35%
+                        moins cher qu’en auto-école classique exception faite
+                        des offres souscrites sur <span class="permis fw-bold">
+                            <a href="./map.html">moncompteformation.gouv.fr</a></span>
+                        - voir article <span class="permis fw-bold"> <a
+                                href="./map.html">4.1.2</a></span> de nos CGU.</p>
+                </div>
+                <div class="col-md-2"></div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 d-flex text-center direction">
+                    <div
+                        class="card-border ps-md-4 pe-md-5 ps-2 pe-2 mt-2 mb-2 ">
+                        <p class="card-top">Frais administratifs</p>
+                        <p class="mt-4">Révision du Code ligne</p>
+                        <p class="mt-4">Prix d’1h de conduite</p>
+                        <p class="mt-4">Code + 20 Heures</p>
+                    </div>
+
+                    <div class="card2-border ps-md-4 pe-md-5 ps-2 pe-2">
+                        <p class="fw-medium leper-margin">lePERMISLIBRE</p>
+                        <p class="mt-4 fw-medium">Gratuit </p>
+                        <p class="mt-4 fw-medium">19€</p>
+                        <p class="mt-4 fw-medium">Dès 39.90€</p>
+                        <p class="mt-4 fw-medium">799€</p>
+
+                    </div>
+
+                    <div
+                        class="card3-border ps-md-4 pe-md-5 ps-2 pe-2 mt-2 mb-2">
+                        <p class="fw-medium">Auto-école</p>
+                        <p class="fw-medium">traditionnelle</p>
+                        <p class="mt-4 fw-medium">Variable</p>
+                        <p class="mt-4 fw-medium">Supplément</p>
+                        <p class="mt-4 fw-medium">43€ en moyenne</p>
+                        <p class="mt-4 fw-medium">1234€ constatés</p>
+
+                    </div>
+
+                </div>
+                <div class=" col-md-2"></div>
+                <div class="button text-center">
+                    <div class="d-flex justify-content-center mt-3">
+                        <i class="fa fa-check pe-2" style="color: black;"></i>
+                        <p>Vous économisez 435€</p>
+                    </div>
+                    <a href="./map.html"><button
+                            class="reserve-btn ps-3 pe-3 mt-4 button-background">Je
+                            passe le permis</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!--######################> Forth Section End<###################  -->
 
 
 
-      
-</body>
 
+        <!--###############> Footer Start <############### -->
+         <footer class="main-footer mt-4">
+      <div class="px-2 px-md-5">
+        <div class="row p-0">
+          <div class="col-lg-10 p-0">
+            <h3 class="footerheading">
+              Envie de passer le permis avec notre auto-école en ligne ?
+            </h3>
+          </div>
+          <div class="col-lg-2">
+            <button class="bttn btn-danger">Je Passe le permis</button>
+          </div>
+        </div>
+        <div class="row mt-md-5 pt-md-5 p-0">
+          <div class="col-md-3 col-sm-6 align-self-center">
+            <img class="footer-image " src="./assets/img/logo-footer.png" alt="" />
+
+            <div class="star-image">
+              <span>Excellent</span>
+              <img src="./assets/img/star-icon-footer.png" alt="" />
+            </div>
+            <span><a href="">4.6/5 basé sur +4000 avis</a></span>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <p class="footer-text">lePERMISLIBRE</p>
+
+            <ul class="p-0">
+              <li><a href="">Qui sommes-nous ?</a></li>
+              <li><a href="">Devenez enseignant</a></li>
+              <li><a href="">Nos tarifs</a></li>
+              <li><a href="">Carrières</a></li>
+              <li><a href="">Parrainage</a></li>
+              <li><a href="">Test de code gratuit</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Le blog</a></li>
+              <li><a href="">*Conditions de l'offre</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <p class="footer-text">Où sommes-nous ?</p>
+            <ul class="p-0">
+              <li><a href="">Nos villes</a></li>
+              <li><a href="">Auto-école à Paris</a></li>
+              <li><a href="">Auto-école à Lyon</a></li>
+              <li><a href="">Auto-école à Marseille</a></li>
+              <li><a href="">Auto-école à Toulouse</a></li>
+              <li><a href="">Auto-école à Bordeaux</a></li>
+              <li><a href="">Auto-école à Nantes</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 ">
+            <p class="footer-text">Légal</p>
+            <ul class="p-0">
+              <li><a href="">Investisseurs</a></li>
+              <li><a href="">Demande de partenariat</a></li>
+              <li><a href="">Mentions légales</a></li>
+              <li><a href="">Conditions générales</a></li>
+              <li><a href="">Charte de confidentialité</a></li>
+              <li><a href="">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <p class="footer-p">
+              Pour suivre nos dernières actualités, échanger avec la communauté,
+              discuter avec nous ou nous poster un mot doux : retrouvez-nous sur
+              nos réseaux !
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <i class="fa-brands fa-facebook-f  font-icon"></i>
+            <i class="fa-brands fa-instagram  font-icon"></i>
+            <i class="fa-brands fa-twitter  font-icon"></i>
+            <i class="fa-brands fa-tiktok font-icon"></i>
+            <i class="fa-brands fa-youtube font-icon"></i>
+            <i class="fa-brands fa-linkedin-in font-icon"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+        <!--###############> Footer End <################# -->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+        $(document).ready(function () {
+            // Enable dropdown on hover
+            $('.nav-item.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').show();
+            }, function () {
+                $(this).find('.dropdown-menu').hide();
+            });
+
+            // Hide dropdown when clicking outside of it
+            $(document).on('click', function (event) {
+                if (!$(event.target).closest('.nav-item.dropdown').length) {
+                    $('.nav-item.dropdown .dropdown-menu').hide();
+                }
+            });
+        });
+    </script>
+
+        <script>
+    const navbar = document.querySelector('.navbar');
+      const originalOffsetTop = navbar.offsetTop;
+    
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > originalOffsetTop) {
+          navbar.classList.add('fixed-top');
+          navbar.classList.add('shadowNav')
+        } else {
+          navbar.classList.remove('fixed-top');
+          navbar.classList.remove('shadowNav')
+        }
+      });
+
+    
+</script>
+
+        <!--##################> Map Section Script Start  <###############-->
+
+        <!-- Map Link Start -->
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script
+            src="https://unpkg.com/leaflet-search@2.9.6/dist/leaflet-search.min.js"></script>
+        <script src="your_script.js"></script>
+
+        <!--Map Link End -->
+
+        <!--Map script start -->
+
+        <script>
+        // Initialize the map
+var map = L.map('map').setView([51.505, -0.09], 13);
+
+// Add a base layer (you can use different tile layers here)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Create a search control
+var searchControl = new L.Control.Search({
+    position: 'topright', // Change the position as needed
+    layer: L.layerGroup(), // Create a layer group for search results
+    propertyName: 'name', // Property in your GeoJSON data containing the search text
+    marker: false // Disable adding markers to search results
+});
+
+// Add the search control to the map
+map.addControl(searchControl);
+
+// Example GeoJSON data (replace with your own data)
+var geojsonFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "Sample Location"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-0.09, 51.505]
+    }
+};
+
+// Create a GeoJSON layer with a sample feature
+var geojsonLayer = L.geoJSON(geojsonFeature);
+
+// Add the GeoJSON layer to the map
+geojsonLayer.addTo(map);
+
+// Fit the map to the bounds of the GeoJSON layer
+map.fitBounds(geojsonLayer.getBounds());
+
+    </script>
+        <!--##################> Map Section Script End<###############-->
+    </body>
 </html>
